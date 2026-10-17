@@ -1,10 +1,23 @@
-[![PHP](https://github.com/olegabr/php-ethereum-address/actions/workflows/php.yml/badge.svg)](https://github.com/olegabr/php-ethereum-address/actions/workflows/php.yml)
-[![codecov](https://codecov.io/gh/olegabr/php-ethereum-address/branch/main/graph/badge.svg)](https://codecov.io/gh/olegabr/php-ethereum-address)
+[![CI](https://github.com/olegabr/php-ethereum-address/actions/workflows/tests.yml/badge.svg)](https://github.com/olegabr/php-ethereum-address/actions/workflows/tests.yml)
 [![Licensed under the MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/olegabr/php-ethereum-address/blob/main/LICENSE)
 
-```lang=bash
-$ composer require olegabr/ethereum-address
+This repository is the EthereumICO fork ([olegabr/php-ethereum-address](https://github.com/olegabr/php-ethereum-address))
+of [kornrunner/php-ethereum-address](https://github.com/kornrunner/php-ethereum-address).
+It keeps the `kornrunner\Ethereum` namespace and the `kornrunner/ethereum-address`
+package name, so it is installed from this repository:
+
+```json
+{
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/olegabr/php-ethereum-address" }
+    ],
+    "require": {
+        "kornrunner/ethereum-address": "dev-main"
+    }
+}
 ```
+
+Pin a tagged release instead of `dev-main` when one covers your needs.
 
 ## Usage
 
